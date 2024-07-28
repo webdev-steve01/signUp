@@ -8,7 +8,6 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-  authDomain: "uber-clone-beryl-pi.vercel.app",
   apiKey: "AIzaSyDNWqSQmH2Zsc0-4JyXZ-pz2qE3dGxKkZE",
   authDomain: "authentication-e64d8.firebaseapp.com",
   projectId: "authentication-e64d8",
@@ -39,7 +38,8 @@ ggl.addEventListener("click", () => {
       console.log(credential);
       // IdP data available using getAdditionalUserInfo(result)
       // ...
-      window.location.href = "./dashboard.html";
+      window.location.href =
+        "https://uber-clone-beryl-pi.vercel.app/components/dashboard.html";
     })
     .catch((error) => {
       // Handle Errors here.
@@ -71,7 +71,7 @@ submit.addEventListener("submit", (e) => {
         count++;
 
         if (count > 6) {
-          window.location.href = "logIn.html";
+          window.location.href = "https://uber-clone-beryl-pi.vercel.app/";
         }
       });
       // message.style.display = 'none'
